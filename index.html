@@ -1,843 +1,672 @@
-<!doctype html>
-<html class="no-js" lang="en">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Abdur Rauf | PHP Full Stack Developer</title>
-    <meta name="robots" content="noindex, follow" />
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title>Rauf - Personal Portfolio</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link href="img/favicon.ico" rel="icon">
 
-    <!-- CSS
-	============================================ -->
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/vendor/fontawesome.css">
-    <link rel="stylesheet" href="assets/css/vendor/lightbox.css">
-    <link rel="stylesheet" href="assets/css/plugins/plugins.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"> 
 
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body class="position-relative spybody" data-spy="scroll" data-target=".navbar-example2" data-offset="150">
-    <div id="my_switcher" class="my_switcher">
-        <ul>
-            <li>
-                <a href="javascript: void(0);" data-theme="light" class="setColor light">
-                    <img src="assets/images/about/sun-01.svg" alt="Sun images"><span title="Light Mode"> Light</span>
-                </a>
-            </li>
-            <li>
-                <a href="javascript: void(0);" data-theme="dark" class="setColor dark">
-                    <img src="assets/images/about/vector.svg" alt="Vector Images"><span title="Dark Mode"> Dark</span>
-                </a>
-            </li>
-        </ul>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
     </div>
-    <div class="main-page">
+    <!-- Spinner End -->
 
-        <!-- Start Header Area  -->
-        <header class="header-area header-style-two header--transparent header-light-mode header--sticky">
-            <div class="header-wrapper">
-                <div class="header-left d-flex align-items-center">
-                    <div class="logo">
-                        <a href="index.html">
-                            <img src="assets/images/logo/logo-symbol-dark.png" alt="Creative Agency">
-                        </a>
-                    </div>
-                    <nav class="mainmenunav d-lg-block ml--50">
-                        <div class="navbar-example2">
-                            <!-- Start Mainmanu Nav -->
-                            <ul class="mainmenu nav nav-pills onepagenav">
-                                <li class="nav-item current">
-                                    <a class="nav-link" href="#home">Home</a>
-                                </li>
-                                <li>
-                                    <a class="nav-link" href="#about">About</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#service">Service</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#portfolio">Portfolio</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#contact">Contact</a>
-                                </li>
-                            </ul>
-                            <!-- End Mainmanu Nav -->
-                        </div>
-                    </nav>
-                </div>
-                <div class="header-right">
-                    <div class="social-share-inner">
-                        <ul class="social-share social-style--2 d-flex justify-content-start liststyle">
-                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                        </ul>
-                    </div>
-                    <!-- Start Humberger Menu  -->
-                    <div class="humberger-menu d-block d-lg-none pl--20 pl_sm--10">
-                        <span class="menutrigger text-white">
-                            <i data-feather="menu"></i>
-                        </span>
-                    </div>
-                    <!-- End Humberger Menu  -->
-                    <!-- Start Close Menu  -->
-                    <div class="close-menu d-block d-lg-none">
-                        <span class="closeTrigger">
-                            <i data-feather="x"></i>
-                        </span>
-                    </div>
-                    <!-- End Close Menu  -->
-                </div>
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light fixed-top shadow py-lg-0 px-4 px-lg-5 wow fadeIn" data-wow-delay="0s">
+       
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between py-4 py-lg-0" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0">
+                <a href="#home" class="nav-item nav-link active">Home</a>
+                <a href="#about" class="nav-item nav-link">About</a>
+                <a href="#skill" class="nav-item nav-link">Skills</a>
+                <a href="#service" class="nav-item nav-link">Services</a>
             </div>
-        </header>
-        <!-- End Header Area  -->
-
-        <!-- Start Page Wrapper  -->
-        <main class="page-wrapper">
-            <!-- Start Slider Area  -->
-            <div class="rn-slider-area" id="home">
-                <!-- Start Single Slide  -->
-                <div
-                    class="slide personal-portfolio-slider slider-paralax slider-style-3 dark-slider d-flex align-items-center justify-content-center bg_image bg_image--28">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <div class="inner text-start">
-                                    <span>Full Stack PHP Developer</span>
-                                    <h1 class="title">Hi, I’m <span>Abdur Rauf</span></h1>
-                                    <h2>based in USA.</h2>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Slide  -->
-                </div>
+            <a href="index.html" class="navbar-brand bg-secondary py-3 px-4 mx-3 d-none d-lg-block">
+                <h1 class="text-primary fw-bold m-0">Rauf</h1>
+            </a>
+            <div class="navbar-nav me-auto py-0">
+                <a href="#project" class="nav-item nav-link">Projects</a>
+                <a href="#team" class="nav-item nav-link">Team</a>
+                <!-- <a href="#testimonial" class="nav-item nav-link">Testimonial</a> -->
+                <a href="#contact" class="nav-item nav-link">Contact</a>
             </div>
-            <!-- End Slider Area  -->
+        </div>
+    </nav>
+    <!-- Navbar End -->
 
-            <!-- Start About Area  -->
-            <div class="about-area rn-section-gap bg_color--1" id="about">
-                <div class="about-wrapper">
-                    <div class="container">
-                        <div class="row row--35 align-items-center">
-                            <div class="col-lg-5">
-                                <div class="thumbnail">
-                                    <img class="w-100" src="assets/images/about/about-8.jpg" alt="About Images" />
-                                </div>
-                            </div>
-                            <div class="col-lg-7">
-                                <div class="about-inner inner pt--100 pt_sm--40 pt_md--40">
-                                    <div class="section-title">
-                                        <h2 class="title">About Me</h2>
-                                        <p class="description">I am a Senior PHP Developer with well over 10 years
-                                            ofprofessional experience in developing web applications andbeautiful
-                                            websites from scratch. I have a Bachelor of ComputerScience from Framingham
-                                            State University.
-                                            My journey as a web developer has been impressive and I continue to grow and
-                                            learneveryday. I am a great fit for any start-up or web agency with myrange
-                                            of skills I have the ability to take on any size project
-                                            or clientand deliver a product or website that meets today’s web
-                                            standardsand expectations.
-                                        </p>
-                                    </div>
-                                    <div class="tab-wrapper mt--30">
-                                        <ul class="nav nav-tabs tab-style--1" id="myTab" role="tablist">
-                                            <li class="nav-item">
-                                                <a class="nav-link active" id="mainskill" data-bs-toggle="tab"
-                                                    data-bs-target="#rn-mainskill" role="tab" aria-controls="mainskill"
-                                                    aria-selected="true">Skills</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" id="experience" data-bs-toggle="tab"
-                                                    data-bs-target="#rn-experience" role="tab"
-                                                    aria-controls="experience" aria-selected="false">Experience</a>
-                                            </li>
-                                            <!-- <li class="nav-item">
-                                                <a class="nav-link" id="education" data-bs-toggle="tab"
-                                                    data-bs-target="#rn-education" role="tab" aria-controls="education"
-                                                    aria-selected="false">Education & Certification</a>
-                                            </li> -->
-                                        </ul>
-                                        <div class="tab-content" id="myTabContent">
-                                            <div class="tab-pane fade show active" id="rn-mainskill" role="tabpanel"
-                                                aria-labelledby="mainskill">
-                                                <div class="single-tab-content">
-                                                    <ul>
-                                                        <li><a href="service.html">PROGRAMMING <span> - Knowledge of OOP
-                                                                    / Design Patterns. Expert in PHP, proficient in MVC.
-                                                                    Web Services, API, WSDL, JSON, SOAP, REST,
-                                                                    XML</span></a>
-                                                        </li>
-                                                        <li><a href="service.html">FrameWorks<span> -Laravel,
-                                                                    CodeIgniter, Yii, Zend, Symphony, AngularJS, VueJS
-                                                                    WordPress, Shopify, OpenCart3, Drupal,
-                                                                    Joomla.</span></a>
-                                                        </li>
-                                                        <li><a href="service.html">Databases <span> - MySQL, SQL,
-                                                                    MongoDB, Redis, firebase</span></a></li>
-                                                        <li><a href="service.html">Web Related <span> - VueJS, Angular,
-                                                                    React, jQuery, VanillaJS, HTML5, CSS3, AJAX,
-                                                                    Bootstrap, AnimateJS, BounceJS</span></a></li>
-                                                        <li><a href="service.html">Server Softwares <span> - Linux
-                                                                    (Debian, Ubuntu, CentOS), LAMP, XAMPP, Apache,
-                                                                    Nginx, Amazon AWS (S3, EC2, RDB, Route53), SSH,
-                                                                    cPanel, FTP</span></a></li>
-                                                        <li><a href="service.html">Softwares <span> - Git (Github,
-                                                                    GitLab, BitBucket), PhpStorm, Visual Studio Code,
-                                                                    Sublime, Photoshop, XD, Illustrator, Sketch,
-                                                                    InDesign CONTACT</span></a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="tab-pane fade" id="rn-experience" role="tabpanel"
-                                                aria-labelledby="experience">
-                                                <div class="single-tab-content">
-                                                    <ul>
-                                                        <li><a href="/service">Full Stack Web Developer<span> - Statnews | Boston Globe </span></a> Mar 2017 - Dec 2022</li>
-                                                        <li><a href="/service">PHP Developer<span> - GRAMMERCY
-                                                                    TECH</span></a> 2022 - Dec 2024</li>
-                                                        <li><a href="/service">Senior PHP Developer<span> - APOGEE
-                                                                    INVENT
-                                                                </span></a> FEB 2012 - MAR 2017
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
 
-                                            <!-- <div class="tab-pane fade" id="rn-education" role="tabpanel"
-                                                aria-labelledby="education">
-                                                <div class="single-tab-content">
-                                                    <ul>
-                                                        <li><a href="/service">BSc In CSE<span> - Framingham State
-                                                                    University, Framingham, US</span></a> 2014</li>
-                                                        <li><a href="/service">Diploma in Computer Science<span> -
-                                                                    Gamma Technical Institute</span></a> 2009</li>
-                                                    </ul>
-                                                </div>
-                                            </div> -->
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+    <!-- Header Start -->
+    <div class="container-fluid bg-light my-6 mt-0" id="home">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 py-6 pb-0 pt-lg-0">
+                    <h3 class="text-primary mb-3">I'm</h3>
+                    <h1 class="display-3 mb-3">Abdur Rauf</h1>
+                    <h2 class="typed-text-output d-inline"></h2>
+                    <div class="typed-text d-none">Full Stack Web Developer, Transforming digital visions into robust and scalable solutions.</div>
+                    <div class="d-flex align-items-center pt-5">
+                        <a href="img/resume.pdf" target="_blank" class="btn btn-primary py-3 px-4 me-5">Download CV</a>
+                        <a href="#contact" class="btn btn-warning py-3 px-4 me-5">Let's Talk</a>
+                        
                     </div>
                 </div>
-            </div>
-            <!-- End About Area  -->
-
-            <!-- Start Service Area  -->
-            <div class="rn-service-area rn-section-gap bg_color--5" id="service">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="section-title service-style--3 text-center mb--20 mb_sm--0 md_md--0">
-                                <h2 class="title">My Awesome Service</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-
-                        <!-- Start Single Service  -->
-                        <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt--40">
-                            <div class="single-service service__style--2 bg-color-gray">
-                                <a href="service-details.html">
-                                    <div class="service">
-                                        <div class="icon">
-                                            <i data-feather="cast"></i>
-                                        </div>
-                                        <div class="content">
-                                            <h3 class="title">UI/UX Design</h3>
-                                            <p>The best UI/UX designer portfolios strike a balance between visually
-                                                engaging web and graphic design along with usability. I help companies
-                                                to design intuitive digital products and websites.</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <!-- End Single Service  -->
-
-                        <!-- Start Single Service  -->
-                        <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt--40">
-                            <div class="single-service service__style--2 bg-color-gray">
-                                <a href="service-details.html">
-                                    <div class="service">
-                                        <div class="icon">
-                                            <i data-feather="layers"></i>
-                                        </div>
-                                        <div class="content">
-                                            <h3 class="title">PHP Laravel</h3>
-                                            <p>Laravel is an excellent framework for web applications, as it helps
-                                                developers build projects quickly and easily. So naturally, the demand
-                                                for Laravel developers is only expected to grow over the next few years.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <!-- End Single Service  -->
-
-                        <!-- Start Single Service  -->
-                        <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt--40">
-                            <div class="single-service service__style--2 bg-color-gray">
-                                <a href="service-details.html">
-                                    <div class="service">
-                                        <div class="icon">
-                                            <i data-feather="users"></i>
-                                        </div>
-                                        <div class="content">
-                                            <h3 class="title">WP Theme Development</h3>
-                                            <p>As a WordPress developer i have years of experience with WordPress and
-                                                WooCommerce sites of all sizes and complexity. Building a professional
-                                                and fully functional WordPress website with all the features customers
-                                                expect takes time, effort, and a degree of technical knowledge and
-                                                expertise.</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <!-- End Single Service  -->
-
-                        <!-- Start Single Service  -->
-                        <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt--40">
-                            <div class="single-service service__style--2 bg-color-gray">
-                                <a href="service-details.html">
-                                    <div class="service">
-                                        <div class="icon">
-                                            <i data-feather="monitor"></i>
-                                        </div>
-                                        <div class="content">
-                                            <h3 class="title">VueJS / ReactJS</h3>
-                                            <p><strong>Vue.js</strong> is probably the most approachable front-end
-                                                framework around. I mostly used Vue for built frontend.
-                                                As a <strong>ReactJS</strong> developer i am responsible for designing
-                                                and implementing UI components for JavaScript-based web applications and
-                                                mobile applications with the use of open-source library infrastructure.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <!-- End Single Service  -->
-
-                        <!-- Start Single Service  -->
-                        <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt--40">
-                            <div class="single-service service__style--2 bg-color-gray">
-                                <a href="service-details.html">
-                                    <div class="service">
-                                        <div class="icon">
-                                            <i data-feather="camera"></i>
-                                        </div>
-                                        <div class="content">
-                                            <h3 class="title">SEO & Testing</h3>
-                                            <p>At Medium Interactive, i am focused on helping your business achieve your
-                                                marketing goals through search engine optimization (SEO). I have 5 years
-                                                experiance in SEO.</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <!-- End Single Service  -->
-
-                        <!-- Start Single Service  -->
-                        <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt--40">
-                            <div class="single-service service__style--2 bg-color-gray">
-                                <a href="service-details.html">
-                                    <div class="service">
-                                        <div class="icon">
-                                            <i data-feather="activity"></i>
-                                        </div>
-                                        <div class="content">
-                                            <h3 class="title">Social Media Marketing</h3>
-                                            <p>From managing your personal brand to landing E commerce sales, my social
-                                                media marketing and marketing strategies are always aligned with your
-                                                marketing goals.
-                                                From keeping a balance to dealing with support issues, i always used
-                                                complete plan to make your brand more social.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <!-- End Single Service  -->
-                    </div>
-                </div>
-            </div>
-            <!-- Start Service Area  -->
-
-            <!-- Start Portfolio Area  -->
-            <div class="rn-portfolio-area rn-section-gap bg_color--1" id="portfolio">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="section-title section-title--3 text-center mb--30">
-                                <h2 class="title">My Latest Project</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <!-- Start Single Portfolio  -->
-                        <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt--30">
-                            <div class="portfolio text-center">
-                                <div class="thumbnail-inner">
-                                    <div class="thumbnail image-8"></div>
-                                    <div class="bg-blr-image image-8"></div>
-                                </div>
-                                <div class="content">
-                                    <div class="inner">
-                                        <p>Development</p>
-                                        <h4><a href="#">UI/UX Project</a></h4>
-                                        <div class="portfolio-button">
-                                            <button class="rn-btn see-detail-button" data-bs-toggle="modal"
-                                                data-bs-target="#projectNLC">See Detail</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Single Portfolio  -->
-                        <!-- https://weedexinc.fieldportals.com/ -->
-                        <!-- Start Single Portfolio  -->
-                        <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt--30">
-                            <div class="portfolio text-center">
-                                <div class="thumbnail-inner">
-                                    <div class="thumbnail image-7"></div>
-                                    <div class="bg-blr-image image-7"></div>
-                                </div>
-                                <div class="content">
-                                    <div class="inner">
-                                        <p>Development</p>
-                                        <h4><a href="#">PHP Laravel Project</a>
-                                        </h4>
-                                        <div class="portfolio-button">
-                                            <button class="rn-btn see-detail-button" data-bs-toggle="modal"
-                                                data-bs-target="#projectEventfinity">See Detail</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Single Portfolio  -->
-
-                        <!-- Start Single Portfolio  -->
-                        <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt--30">
-                            <div class="portfolio text-center">
-                                <div class="thumbnail-inner">
-                                    <div class="thumbnail image-3"></div>
-                                    <div class="bg-blr-image image-3"></div>
-                                </div>
-                                <div class="content">
-                                    <div class="inner">
-                                        <p>Development</p>
-                                        <h4><a href="#">WordPress Project</a>
-                                        </h4>
-                                        <div class="portfolio-button">
-                                            <button class="rn-btn see-detail-button" data-bs-toggle="modal"
-                                                data-bs-target="#projectMB">See Detail</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Single Portfolio  -->
-                        <!-- Start Single Portfolio  -->
-                        <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt--30">
-                            <div class="portfolio text-center">
-                                <div class="thumbnail-inner">
-                                    <div class="thumbnail image-4"></div>
-                                    <div class="bg-blr-image image-4"></div>
-                                </div>
-                                <div class="content">
-                                    <div class="inner">
-                                        <p>Development</p>
-                                        <h4><a href="#">AngularJS - PHP Project</a>
-                                        </h4>
-                                        <div class="portfolio-button">
-                                            <button class="rn-btn see-detail-button" data-bs-toggle="modal"
-                                                data-bs-target="#projectTB">See Detail</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Single Portfolio  -->
-
-                        <!-- Start Single Portfolio  -->
-                        <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt--30">
-                            <div class="portfolio text-center">
-                                <div class="thumbnail-inner">
-                                    <div class="thumbnail image-3"></div>
-                                    <div class="bg-blr-image image-3"></div>
-                                </div>
-                                <div class="content">
-                                    <div class="inner">
-                                        <p>Development</p>
-                                        <h4><a href="#">AngularJS - PHP Project</a>
-                                        </h4>
-                                        <div class="portfolio-button">
-                                            <button class="rn-btn see-detail-button" data-bs-toggle="modal"
-                                                data-bs-target="#projectDLZP">See Detail</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Single Portfolio  -->
-
-                        <!-- Start Single Portfolio  -->
-                        <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt--30">
-                            <div class="portfolio text-center">
-                                <div class="thumbnail-inner">
-                                    <div class="thumbnail image-2"></div>
-                                    <div class="bg-blr-image image-2"></div>
-                                </div>
-                                <div class="content">
-                                    <div class="inner">
-                                        <p>Development</p>
-                                        <h4><a href="#">Custom PHP Project</a>
-                                        </h4>
-                                        <div class="portfolio-button">
-                                            <button class="rn-btn see-detail-button" data-bs-toggle="modal"
-                                                data-bs-target="#projectAI">See Detail</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Single Portfolio  -->
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="view-more-btn mt--60 mt_sm--30 text-center">
-                                <a class="rn-button-style--2 btn_solid" href="assets/cv/resume.pdf">Download my resume</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- End Portfolio Area  -->
-
-            <!-- Start Contact Area  -->
-            <div class="rn-contact-area rn-section-gap bg_color--1" id="contact">
-                <div class="contact-form--1">
-                    <div class="container">
-                        <div class="row row--35 align-items-start">
-                            <div class="col-lg-6 order-2 order-lg-1">
-                                <div class="section-title text-start mb--50 mb_sm--30 mb_md--30">
-                                    <h2 class="title">Hire Me.</h2>
-                                    <p class="description">I am available for work. Connect with me via phone:
-                                        <a href="tel:+1 508 202 1641">+1 508 202 1641</a> or email:
-                                        <a href="mailto:rauf.devs@gmail.com">rauf.devs@gmail.com</a>
-                                    </p>
-                                </div>
-                                <div class="form-wrapper">
-                                    <form>
-                                        <label htmlFor="item01">
-                                            <input type="text" name="name" id="item01" placeholder="Your Name *" />
-                                        </label>
-
-                                        <label htmlFor="item02">
-                                            <input type="text" name="email" id="item02" placeholder="Your email *">
-                                        </label>
-
-                                        <label htmlFor="item03">
-                                            <input type="text" name="subject" id="item03" placeholder="Write a Subject">
-                                        </label>
-                                        <label htmlFor="item04">
-                                            <textarea type="text" id="item04" name="message"
-                                                placeholder="Your Message"></textarea>
-                                        </label>
-                                        <button class="rn-button-style--2 btn_solid" type="submit" value="submit"
-                                            name="submit" id="mc-embedded-subscribe">Submit</button>
-                                    </form>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 order-1 order-lg-2">
-                                <div class="thumbnail mb_md--30 mb_sm--30">
-                                    <img src="assets/images/about/about-9.jpg" alt="Abdur Rauf" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- End Contact Area  -->
-        </main>
-        <!-- End Page Wrapper  -->
-        <!-- Start Footer Style Two  -->
-        <div class="footer-style-2 ptb--30 bg_image bg_image--1" data-black-overlay="6">
-            <div class="wrapper plr--50 plr_sm--20">
-                <div class="row align-items-center justify-content-between">
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                        <div class="inner">
-                            <div class="logo text-center text-sm-start mb_sm--20">
-                                <a href="#">
-                                    <img src="assets/images/logo/logo-symble-dark.png" alt="Logo images" />
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                        <div class="inner text-center">
-                            <ul class="social-share rn-lg-size d-flex justify-content-center liststyle">
-                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fab fa-skype"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-12 col-sm-12 col-12">
-                        <div class="inner text-lg-end text-center mt_md--20 mt_sm--20">
-                            <div class="text">
-                                <p>Copyright © 2023 <a href="index.html">Abdur Rauf</a>. All Rights Reserved.</p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="col-lg-6">
+                    <img class="img-fluid" src="img/hero.avif" alt="">
                 </div>
             </div>
         </div>
-        <!-- End Footer Style Two  -->
-        <!-- Project NLC-->
-        <div class="modal fade" id="projectNLC" tabindex="-1" role="dialog" aria-labelledby="projectNLCLabel1"
-            aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="projectNLCLabel1">NLC</h5>
-                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <p> With a passion for crafting digital experiences, I worked on creating the frontend world of
-                            'No Limit Creatives.' Through the art of code, I bring ideas to life, orchestrating
-                            symphonies of WordPress, JavaScript, and CSS to sculpt seamless and responsive websites. My
-                            expertise shines as I intricately design custom themes, infuse user-centric fluidity, and
-                            optimize performance to perfection. With a keen eye for detail, I weave plugins into the
-                            fabric of possibilities, creating future-proof solutions that embrace the tech frontiers.
-                            Join me on this journey where creativity knows no bounds, and code becomes a canvas for
-                            boundless innovation.</p>
-                    </div>
-                    <div class="modal-footer">
-                        <a type="button" class="rn-btn see-detail-buttony" href="https://nlc.com/">Vist</a>
-                        <a type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Project NLC -->
-        <!-- Project Eventfinity-->
-        <div class="modal fade" id="projectEventfinity" tabindex="-1" role="dialog"
-            aria-labelledby="projectEventfinityLabel1" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="projectEventfinityLabel1">Eventfinity</h5>
-                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <p>In my role as a Laravel developer, I have played a pivotal role in shaping the architecture
-                            and functionality of Eventfinity as part of the developmeny team, it's an innovative hybrid
-                            event platform that seamlessly blends in-person and virtual experiences. Drawing on my
-                            extensive experience with Laravel, I have orchestrated the intricate backend systems that
-                            power the platform, ensuring robustness, scalability, and data integrity. My expertise
-                            extends to crafting custom solutions within Laravel to address unique challenges in event
-                            management, attendee engagement, and seamless integration of virtual meeting rooms.
-                            Leveraging my skillset, I have optimized the platform's performance, worked on developing
-                            interactive features such as breakout sessions and broadcasting capabilities, and enabled
-                            networking functionalities that foster meaningful connections. Through Eventfinity, I have
-                            demonstrated my ability to harness cutting-edge technology to create immersive and
-                            transformative event experiences.</p>
-                    </div>
-                    <div class="modal-footer">
-                        <a type="button" class="rn-btn see-detail-buttony" href="https://www.eventfinity.co/">Vist</a>
-                        <a type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Project Eventfinity -->
-        <!-- Project MB-->
-        <div class="modal fade" id="projectMB" tabindex="-1" role="dialog" aria-labelledby="projectMBLabel1"
-            aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="projectMBLabel1">Metal Budies</h5>
-                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <p>
-                            As a senior PHP WordPress developer for MetalBuddies.com, I played a key role in developing
-                            a robust e-commerce platform for yard supplies. I designed an intuitive frontend using HTML,
-                            CSS, and JavaScript, ensuring seamless user navigation across devices. On the backend, I
-                            leveraged PHP and WordPress to create custom plugins for inventory management, secure
-                            payments, and user-friendly product catalogs. By prioritizing security and collaborating
-                            closely with the team, I contributed to the platform's success in delivering competitive
-                            rates, a secure shopping environment, and a seamless user experience.
-                        </p>
-                    </div>
-                    <div class="modal-footer">
-                        <a type="button" class="rn-btn see-detail-buttony" href="https://www.metalbuddies.com/">Vist</a>
-                        <a type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Project MB -->
-        <!-- Project TB-->
-        <div class="modal fade" id="projectTB" tabindex="-1" role="dialog" aria-labelledby="projectTBLabel1"
-            aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="projectTBLabel1">Tootabee</h5>
-                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <p>
-                            Tootabee.org, a dynamic platform for finding tutors and managing tutoring services, was my
-                            focus as a senior developer. I adeptly utilized AngularJS and PHP to craft a comprehensive
-                            solution. On the frontend, I designed a user-friendly interface using AngularJS, enhancing
-                            the search and booking experience. PHP empowered me to build a robust backend, enabling
-                            features such as tutor registration, session scheduling, and payment processing. My role
-                            included seamless integration of the two technologies, ensuring a smooth and efficient
-                            experience for both tutors and students. My contribution to Tootabee's development led to a
-                            cohesive tutoring portal that streamlined the process of finding, booking, and managing
-                            tutoring services.
-                        </p>
-                    </div>
-                    <div class="modal-footer">
-                        <a type="button" class="rn-btn see-detail-buttony" href="https://tootabee.org/">Vist</a>
-                        <a type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Project TB -->
-        <!-- Project DLZP-->
-        <div class="modal fade" id="projectDLZP" tabindex="-1" role="dialog" aria-labelledby="projectDLZPLabel1"
-            aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="projectDLZPLabel1">DLZP Group</h5>
-                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <p>
-                            DLZP Group played a pivotal role in modernizing and expanding our telemedicine services at
-                            an accelerated pace. As a telemedicine provider experiencing significant growth, we sought
-                            DLZP's expertise to revamp our legacy AWS EC2 solution. Their analysis led to the
-                            implementation of a secure, serverless architecture using AWS Fargate and RDS, ensuring
-                            scalability and load balancing. DLZP's proficiency extended to setting up an AWS code
-                            pipeline for continuous integration and delivery, streamlining our workflow. The DLZP team's
-                            professionalism and commitment stood out, delivering the project punctually and within the
-                            quoted budget. DLZP remains our top choice for outsourcing, not only for their technical
-                            excellence but also for their dedication to our success.
-                        </p>
-                    </div>
-                    <div class="modal-footer">
-                        <a type="button" class="rn-btn see-detail-buttony" href="https://www.dlzpgroup.com/">Vist</a>
-                        <a type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Project DLZP -->
-        <!-- Project AI-->
-        <div class="modal fade" id="projectAI" tabindex="-1" role="dialog" aria-labelledby="projectAILabel1"
-            aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="projectAILabel1">ApogeeInvent</h5>
-                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <p>
-                            ApogeeInvent is a robust SaaS application crafted using custom PHP, offering a versatile
-                            array of features tailored to meet your business needs. With a user-friendly interface and
-                            powerful functionalities, Apogee Invent empowers businesses to streamline operations,
-                            enhance productivity, and elevate customer experiences. Built with a focus on customization
-                            and scalability, this SaaS solution delivers exceptional performance and reliability, backed
-                            by the flexibility to adapt to your evolving requirements. Experience the benefits of Apogee
-                            Invent's custom PHP architecture, designed to drive your business forward with innovation
-                            and efficiency.
-                        </p>
-                    </div>
-                    <div class="modal-footer">
-                        <a type="button" class="rn-btn see-detail-buttony" href="https://www.apogeeinvent.com/">Vist</a>
-                        <a type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Project DLZP -->
     </div>
-    <!-- JS
-============================================ -->
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const seeDetailButtons = document.querySelectorAll(".see-detail-button");
-
-            seeDetailButtons.forEach(button => {
-                button.addEventListener("click", function () {
-                    const projectId = button.getAttribute("data-target");
-                    const projectTitle = button.closest(".portfolio").querySelector("h4 a").textContent;
-                    const projectDescription = button.closest(".portfolio").querySelector("p").textContent;
-
-                    const modal = document.querySelector(projectId);
-                    modal.querySelector(".modal-title").textContent = projectTitle;
-                    modal.querySelector(".modal-body p").textContent = projectDescription;
-                });
-            });
-        });
-
-    </script>
-    <!-- Modernizer JS -->
-    <script src="assets/js/vendor/modernizr.min.js"></script>
-    <!-- jQuery JS -->
-    <script src="assets/js/vendor/jquery.js"></script>
-    <!-- Bootstrap JS -->
-    <script src="assets/js/vendor/bootstrap.min.js"></script>
-    <script src="assets/js/vendor/stellar.js"></script>
-    <script src="assets/js/vendor/particles.js"></script>
-    <script src="assets/js/vendor/masonry.js"></script>
-    <script src="assets/js/vendor/stickysidebar.js"></script>
-    <script src="assets/js/plugins/plugins.js"></script>
-    <script src="assets/js/vendor/js.cookie.js"></script>
-    <script src="assets/js/vendor/jquery.style.switcher.js"></script>
-    <script src="assets/js/vendor/jquery-one-page-nav.js"></script>
-    <!-- Main JS -->
-    <script src="assets/js/main.js"></script>
+    <!-- Header End -->
 
 
+
+
+    <!-- About Start -->
+    <div class="container-xxl py-6" id="about">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="d-flex align-items-center mb-5">
+                        <div class="years flex-shrink-0 text-center me-4">
+                            <h1 class="display-1 mb-0">10+</h1>
+                            <h5 class="mb-0">Years</h5>
+                        </div>
+                        <h3 class="lh-base mb-0">of working experience as a web developer</h3>
+                    </div>
+                    <p class="mb-4">I am a seasoned Full Stack Developer with over ten years of demonstrated success in designing and delivering high-performance web applications. My career spans prominent roles at leading media organizations and innovative tech companies, where I consistently adapt to new challenges by staying ahead of emerging technologies.</p>
+                    <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Best Afordable Prices</p>
+                    <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>High Quality work</p>
+                    <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>On Time Project Delivery</p>
+                    <!-- <a class="btn btn-primary py-3 px-5 mt-3" href="">Read More</a> -->
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="row g-3 mb-4">
+                        <div class="col-sm-6">
+                            <img class="img-fluid rounded" src="img/happy-client1.avif" alt="">
+                        </div>
+                        <div class="col-sm-6">
+                            <img class="img-fluid rounded" src="img/happy-client2.avif" alt="">
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center mb-3">
+                        <h5 class="border-end pe-3 me-3 mb-0">Happy Clients</h5>
+                        <h2 class="text-primary fw-bold mb-0" data-toggle="counter-up">123</h2>
+                    </div>
+                    <p class="mb-4">A happy client is a satisfied customer who has had a positive experience with your service or product, often leading to repeat business, referrals, and strong testimonials</p>
+                    <div class="d-flex align-items-center mb-3">
+                        <h5 class="border-end pe-3 me-3 mb-0">Projects Completed</h5>
+                        <h2 class="text-primary fw-bold mb-0" data-toggle="counter-up">123</h2>
+                    </div>
+                    <p class="mb-0">Successfully delivered the project on time, meeting all client expectations and earning excellent feedback.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Expertise Start -->
+    <div class="container-xxl py-6 pb-5" id="skill">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <h1 class="display-5 mb-5">Skills & Experience</h1>
+                    <p class="mb-4">Proficient in creating modern, user-friendly websites with a focus on performance and usability. Experienced with WordPress, Laravel, and front-end frameworks like Bootstrap</p>
+                    <h3 class="mb-4">My Skills</h3>
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="font-weight-bold">Programming</h6>
+                                    <h6 class="font-weight-bold">95%</h6>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="font-weight-bold">frameworks</h6>
+                                    <h6 class="font-weight-bold">90%</h6>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="font-weight-bold">Database</h6>
+                                    <h6 class="font-weight-bold">95%</h6>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="font-weight-bold">Web related</h6>
+                                    <h6 class="font-weight-bold">95%</h6>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="font-weight-bold">Server Softwares</h6>
+                                    <h6 class="font-weight-bold">95%</h6>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="font-weight-bold">Softwares</h6>
+                                    <h6 class="font-weight-bold">85%</h6>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <ul class="nav nav-pills rounded border border-2 border-primary mb-5">
+                        <li class="nav-item w-50">
+                            <button class="nav-link w-100 py-3 fs-5 active" data-bs-toggle="pill" href="#tab-1">Experience</button>
+                        </li>
+                        <li class="nav-item w-50">
+                            <button class="nav-link w-100 py-3 fs-5" data-bs-toggle="pill" href="#tab-2">Education</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="tab-1" class="tab-pane fade show p-0 active">
+                            <div class="row gy-5 gx-4">
+                                <div class="col-sm-6">
+                                    <h5>Senior PHP Developer</h5>
+                                    <hr class="text-primary my-2">
+                                    <p class="text-primary mb-1">2012 - 2017</p>
+                                    <h6 class="mb-0">APOGEE INVENT</h6>
+                                </div>
+                                <div class="col-sm-6">
+                                    <h5>Full Stack developer</h5>
+                                    <hr class="text-primary my-2">
+                                    <p class="text-primary mb-1">2017 - 2022</p>
+                                    <h6 class="mb-0">Statnews | Boston Globe</h6>
+                                </div>
+                                <div class="col-sm-6">
+                                    <h5>PHP Developer</h5>
+                                    <hr class="text-primary my-2">
+                                    <p class="text-primary mb-1">2022 - Dec 2024</p>
+                                    <h6 class="mb-0">Grammercy Tech</h6>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div id="tab-2" class="tab-pane fade show p-0">
+                            <div class="row gy-5 gx-4">
+                                <div class="col-sm-6">
+                                    <h5>BSC in Computer </h5>
+                                    <hr class="text-primary my-2">
+                                    <p class="text-primary mb-1">2014 - 216</p>
+                                    <h6 class="mb-0">Framingham state University</h6>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Expertise End -->
+
+
+    <!-- Service Start -->
+    <div class="container-fluid bg-light my-5 py-6" id="service">
+        <div class="container">
+            <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-lg-6">
+                    <h1 class="display-5 mb-0">My Services</h1>
+                </div>
+                <div class="col-lg-6 text-lg-end">
+                    <a class="btn btn-primary py-3 px-5" href="">Let's talk</a>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
+                        <div class="bg-icon flex-shrink-0 mb-3">
+                            <i class="fa fa-crop-alt fa-2x text-dark"></i>
+                        </div>
+                        <div class="ms-sm-4">
+                            <h4 class="mb-3">UI/UX Design</h4>
+                            <h6 class="mb-3">Start from <span class="text-primary">$100</span></h6>
+                            <span>Crafting intuitive, visually engaging designs that prioritize user experience while ensuring brand consistency.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
+                        <div class="bg-icon flex-shrink-0 mb-3">
+                            <i class="fa fa-code-branch fa-2x text-dark"></i>
+                        </div>
+                        <div class="ms-sm-4">
+                            <h4 class="mb-3">Custom Development</h4>
+                            <h6 class="mb-3">Start from <span class="text-primary">$199</span></h6>
+                            <span>Developing scalable web applications using PHP/Laravel, WordPress, and modern JavaScript frameworks to transform complex challenges into elegant solutions.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
+                        <div class="bg-icon flex-shrink-0 mb-3">
+                            <i class="fa fa-code fa-2x text-dark"></i>
+                        </div>
+                        <div class="ms-sm-4">
+                            <h4 class="mb-3">Theme & Plugin Development</h4>
+                            <h6 class="mb-3">Start from <span class="text-primary">$100</span></h6>
+                            <span>Creating and customizing WordPress themes and plugins for highly functional, performance-optimized websites.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
+                        <div class="bg-icon flex-shrink-0 mb-3">
+                            <i class="fa fa-laptop-code fa-2x text-dark"></i>
+                        </div>
+                        <div class="ms-sm-4">
+                            <h4 class="mb-3">Front-End Development</h4>
+                            <h6 class="mb-3">Start from <span class="text-primary">$150</span></h6>
+                            <span>Building dynamic, interactive user interfaces with Vue.js, ReactJS, and modern front-end libraries.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
+                        <div class="bg-icon flex-shrink-0 mb-3">
+                            <i class="fa fa-laptop-code fa-2x text-dark"></i>
+                        </div>
+                        <div class="ms-sm-4">
+                            <h4 class="mb-3">SEO, Performance & Maintenance</h4>
+                            <h6 class="mb-3">Start from <span class="text-primary">$100</span></h6>
+                            <span>Enhancing website visibility and performance through comprehensive SEO strategies, meticulous testing, and proactive maintenance.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
+                        <div class="bg-icon flex-shrink-0 mb-3">
+                            <i class="fa fa-code fa-2x text-dark"></i>
+                        </div>
+                        <div class="ms-sm-4">
+                            <h4 class="mb-3">Consultation & Collaboration</h4>
+                            <h6 class="mb-3">Start from <span class="text-primary">$150</span></h6>
+                            <span>Offering expert guidance on digital transformation initiatives and innovative technology integrations.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+    <!-- Projects Start -->
+    <div class="container-xxl py-6 pt-5" id="project">
+        <div class="container">
+            <div class="row g-5 mb-5 align-items-center wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-lg-4">
+                    <h1 class="display-5 mb-0">My Projects</h1>
+                </div>
+                <div class="col-lg-8 text-lg-end">
+                    <ul class="list-inline mx-n3 mb-0" id="portfolio-flters">
+                        <li class="mx-3 active" data-filter="*">All Projects</li>
+                        <li class="mx-3" data-filter=".first">UI/UX Design</li>
+                        <li class="mx-3" data-filter=".second">Laravel</li>
+                        <li class="mx-3" data-filter=".third">WordPress</li>
+                        <li class="mx-3" data-filter=".fourth">JavaScript</li>
+                        <li class="mx-3" data-filter=".fifth">Custom php </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row g-4 portfolio-container wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-lg-4 col-md-6 portfolio-item first">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid" src="img/ux.jpg" alt="">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/ux.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="https://nlc.com/"><i class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item second">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid" src="img/php.jpg" alt="">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/php.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="https://www.eventfinity.co/"><i class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item third">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid" src="img/wordpress.jpg" alt="">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/wordpress.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="https://www.metalbuddies.com/"><i class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item third">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid" src="img/wordpress.jpg" alt="">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/wordpress.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="https://www.statnews.com/"><i class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item fourth">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid" src="img/angular.jpg" alt="">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/angular.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="https://tootabee.org/"><i class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item fifth">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid" src="img/custom.jpg" alt="">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/custom.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="https://www.apogeeinvent.com/"><i class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- Projects End -->
+
+
+    <!-- Team Start -->
+    <div class="container-xxl py-6 pb-5" id="team">
+        <div class="container">
+            <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-lg-6">
+                    <h1 class="display-5 mb-0">Team Members</h1>
+                </div>
+                <div class="col-lg-6 text-lg-end">
+                    <a class="btn btn-primary py-3 px-5" href="">Contact Us</a>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item position-relative">
+                        <img class="img-fluid rounded" src="img/shahzad.jpg" alt="">
+                        <div class="team-text bg-white rounded-end p-4">
+                            <div>
+                                <h5>Shahzad Rahim</h5>
+                                <span>web designer</span>
+                            </div>
+                            <i class="fa fa-arrow-right fa-2x text-primary"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item position-relative">
+                        <img class="img-fluid rounded" src="img/shahzad.jpg" alt="">
+                        <div class="team-text bg-white rounded-end p-4">
+                            <div>
+                                <h5>Shahzad Rahim</h5>
+                                <span>web designer</span>
+                            </div>
+                            <i class="fa fa-arrow-right fa-2x text-primary"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item position-relative">
+                        <img class="img-fluid rounded" src="img/shahzad.jpg" alt="">
+                        <div class="team-text bg-white rounded-end p-4">
+                            <div>
+                                <h5>Shahzad Rahim</h5>
+                                <span>web designer</span>
+                            </div>
+                            <i class="fa fa-arrow-right fa-2x text-primary"></i>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+
+
+    <!-- Testimonial Start -->
+    <!-- <div class="container-fluid bg-light py-5 my-5" id="testimonial">
+        <div class="container-fluid py-5">
+            <h1 class="display-5 text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">Testimonial</h1>
+            <div class="row justify-content-center">
+                <div class="col-lg-3 d-none d-lg-block">
+                    <div class="testimonial-left h-100">
+                        <img class="img-fluid wow fadeIn" data-wow-delay="0.1s" src="img/testimonial-1.jpg" alt="">
+                        <img class="img-fluid wow fadeIn" data-wow-delay="0.3s" src="img/testimonial-2.jpg" alt="">
+                        <img class="img-fluid wow fadeIn" data-wow-delay="0.5s" src="img/testimonial-3.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="owl-carousel testimonial-carousel">
+                        <div class="testimonial-item text-center">
+                            <div class="position-relative mb-5">
+                                <img class="img-fluid rounded-circle border border-secondary p-2 mx-auto" src="img/testimonial-1.jpg" alt="">
+                                <div class="testimonial-icon">
+                                    <i class="fa fa-quote-left text-primary"></i>
+                                </div>
+                            </div>
+                            <p class="fs-5 fst-italic">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat.</p>
+                            <hr class="w-25 mx-auto">
+                            <h5>Client Name</h5>
+                            <span>Profession</span>
+                        </div>
+                        <div class="testimonial-item text-center">
+                            <div class="position-relative mb-5">
+                                <img class="img-fluid rounded-circle border border-secondary p-2 mx-auto" src="img/testimonial-2.jpg" alt="">
+                                <div class="testimonial-icon">
+                                    <i class="fa fa-quote-left text-primary"></i>
+                                </div>
+                            </div>
+                            <p class="fs-5 fst-italic">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat.</p>
+                            <hr class="w-25 mx-auto">
+                            <h5>Client Name</h5>
+                            <span>Profession</span>
+                        </div>
+                        <div class="testimonial-item text-center">
+                            <div class="position-relative mb-5">
+                                <img class="img-fluid rounded-circle border border-secondary p-2 mx-auto" src="img/testimonial-3.jpg" alt="">
+                                <div class="testimonial-icon">
+                                    <i class="fa fa-quote-left text-primary"></i>
+                                </div>
+                            </div>
+                            <p class="fs-5 fst-italic">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat.</p>
+                            <hr class="w-25 mx-auto">
+                            <h5>Client Name</h5>
+                            <span>Profession</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 d-none d-lg-block">
+                    <div class="testimonial-right h-100">
+                        <img class="img-fluid wow fadeIn" data-wow-delay="0.1s" src="img/testimonial-1.jpg" alt="">
+                        <img class="img-fluid wow fadeIn" data-wow-delay="0.3s" src="img/testimonial-2.jpg" alt="">
+                        <img class="img-fluid wow fadeIn" data-wow-delay="0.5s" src="img/testimonial-3.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Testimonial End -->
+
+
+    <!-- Contact Start -->
+    <div class="container-xxl pb-5" id="contact">
+        <div class="container py-5">
+            <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-lg-6">
+                    <h1 class="display-5 mb-0">Let's Work Together</h1>
+                </div>
+                <div class="col-lg-6 text-lg-end">
+                    <a class="btn btn-primary py-3 px-5" href="">let's work</a>
+                </div>
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-5 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <p class="mb-2">My office:</p>
+                    <h3 class="fw-bold">123 Street, New York, USA</h3>
+                    <hr class="w-100">
+                    <p class="mb-2">Call me:</p>
+                    <h3 class="fw-bold">+01 508 202 1641</h3>
+                    <hr class="w-100">
+                    <p class="mb-2">Mail me:</p>
+                    <h3 class="fw-bold">rauf.devs@gmail.com</h3>
+                    <hr class="w-100">
+                    <p class="mb-2">Follow me:</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-square btn-primary me-2" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-primary me-2" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-primary me-2" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square btn-primary me-2" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <h1 class="mb-4 mt-3">Submit your Queries</h1>
+                    <form>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                    <label for="name">Your Name</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                    <label for="email">Your Email</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                    <label for="subject">Subject</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 100px"></textarea>
+                                    <label for="message">Message</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-primary py-3 px-5" type="submit">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
+
+
+    <!-- Map Start -->
+    <!-- <div class="container-xxl pt-5 px-0 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container-xxl pt-5 px-0">
+            <div class="bg-dark">
+                <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001156.4288297426!2d-78.01371936852176!3d42.72876761954724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc4bf0f123a5a9%3A0xddcfc6c1de189567!2sNew%20York%2C%20USA!5e0!3m2!1sen!2sbd!4v1603794290143!5m2!1sen!2sbd"
+                frameborder="0" style="width: 100%; height: 450px; border:0;" allowfullscreen="" aria-hidden="false"
+                tabindex="0"></iframe>
+            </div>
+        </div>
+    </div> -->
+    <!-- Map End -->
+
+
+    <!-- Copyright Start -->
+    <div class="container-fluid bg-dark text-white py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom text-secondary" href="#">Your Site Name</a>, All Right Reserved.
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/typed/typed.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
 </body>
 
 </html>
